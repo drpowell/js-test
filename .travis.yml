@@ -1,0 +1,6 @@
+
+branches:
+  only:
+    - master
+
+script: phantomjs tests/qunit/run-qunit.js test.html
