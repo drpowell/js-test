@@ -3,4 +3,8 @@ branches:
   only:
     - master
 
-script: phantomjs run-qunit.js test.html
+before_script:
+  coffee -c -o . .
+
+script: 
+  phantomjs run-qunit.js test.html
