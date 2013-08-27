@@ -3,6 +3,11 @@ branches:
   only:
     - master
 
+language: node_js
+
+before_install:
+  - npm install coffee-script
+
 before_script:
   coffee -c -o . .
 
